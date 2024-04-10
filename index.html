@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Portfolio" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="icon" href="images/pane-logo.png" type="image/x-icon">
+    <title>Valerie Paneque</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <!-- CHANGE THIS LINK -->
+        <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
+          >VP.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+     <!-- About -->
+     <div class="about-container">
+      <div class="about">
+        <h1>Hi, I am <br> <span class="about__name">Valerie Paneque.</span></h1>
+        <h2 class="about__role">UI Designer.</h2>
+        <p class="about__desc">
+          I am a Digital Media enthusiast with a profound interest in crafting visually captivating and interactive experiences. My journey at the University of Central Florida has honed my skills, nurturing a keen eye for detail and a deep understanding of effective digital media strategies. My passion lies in UI design, where I strive to create user-centric interfaces that seamlessly blend functionality with aesthetics. I thrive on projects that push the boundaries of creativity, constantly seeking new challenges to expand my expertise. Check out my resume and take a look at my projects!
+        </p>
+        <div class="about__contact center">
+          <a href="doc/UI-Design-Resume.pdf" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+          <a href="doc/CV.pdf" target="_blank">
+            <span class="btn btn--outline">CV</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/valerie-paneque-a2a44a1ba/"
+            aria-label="linkedin"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="images/headshot.jpeg" alt="Your Image">
+      </div>
+    </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Study Smarter</h3>
+            <img src="images/flashcard-app.png" alt="Flashcard App">
+            <p class="project__description">
+             The goal of this assignment was to design a mid-fidelity mobile application that allows users to study flashcards. This application would allow users to create, delete and edit flashcards and view them in a random order. Each flashcard has a prompt on one side and answer on the other. My prototype also includes a search feature that will allow the user to look for existing,public flashcards decks. They also have the option to save and favorite cards that they enjoy.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+            <a
+              href="https://www.figma.com/proto/QYmv8SB4KoMO5yCU5mLChX/FlashCardApp?type=design&node-id=1-2&t=UvqZSuDnjrcxyR4h-1&scaling=scale-down&page-id=0%3A1&mode=design"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Task Track</h3>
+            <img src="images/todo-app.png" alt="TODO App">
+            <p class="project__description">
+              The goal of this assignment was to design a mid-fidelity TODO app that will allow users to create and manage tasks, set deadlines, and mark tasks as completed. My prototype consists of a signup/login page, profile, and a main page that allows the user to navigate to their tasks, upcoming tasks, completed tasks, and view their calendar.  The task page will allow users to add new tasks to their list, check off completed tasks, edit their task name and description, and delete tasks.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+
+            <a
+              href="https://www.figma.com/proto/VPL1v9c0XJrkXrvDrTW3Fo/Ex6-TODO?type=design&node-id=144-682&t=M3o5t531WGeBsPid-1&scaling=scale-down&page-id=0%3A1&mode=design"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>PostUrPet</h3>
+            <img src="images/posturpet-app.png" alt="Social Media App for Pets">
+            <p class="project__description">
+              The goal of this project was to create an application (not fully functional) and collaborate with my group of 2 on its creation. The goal of this project was to to brainstorm and define users/stakeholders for app, construct use cases and perform think aloud protocol, task analysis, interaction analysis, define information architecture, navigation structure, and search, sort, retrieval results. We were also tasked to create paper prototype, Lofi and HiFi prototype to get user feedback
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+            <a
+              href="https://www.figma.com/proto/30TicTf9iKpOEnvXWbu5BY/hifi-posturpet-prototype-(Copy)?node-id=214-297&starting-point-node-id=214%3A297&scaling=scale-down&mode=design&t=lXl9Mqcm4TVyKqHx-1"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>ZARA Homepage Redesign</h3>
+            <img src="images/zara-redesign.png" alt="ZARA homepage redesign">
+            <p class="project__description">
+              The goal of this redesign was to find a website that has poor design choices in terms of accessibility. My goal was to make the ZARA website more accessible to those with visual impairments. The original website is very hard to read with the use of small text and clashing colors.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+            <a
+              href="https://www.figma.com/proto/r84Afcm7bRJZPuY4Frs6CZ/zara-website?type=design&node-id=1-2&t=X4PDfdYSg9MRhSgj-1&scaling=scale-down&page-id=0%3A1&mode=design"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+     <!-- Skills -->
+     <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills__container">
+        <div class="skills__group">
+          <h3 class="skills__group-title">Technical Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">HTML</li>
+            <li class="skills__list-item btn btn--plain">CSS</li>
+            <li class="skills__list-item btn btn--plain">JavaScript</li>
+            <li class="skills__list-item btn btn--plain">PHP</li>
+            <li class="skills__list-item btn btn--plain">Visual Studio Code</li>
+            <li class="skills__list-item btn btn--plain">Figma</li>
+            <li class="skills__list-item btn btn--plain">Canva</li>
+            <li class="skills__list-item btn btn--plain">Front-End Design</li>
+            <li class="skills__list-item btn btn--plain">User Experience Design</li>
+            <!-- Add more technical skills here -->
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__group-title">Soft Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">Communication</li>
+            <li class="skills__list-item btn btn--plain">Teamwork</li>
+            <li class="skills__list-item btn btn--plain">Time Management</li>
+            <li class="skills__list-item btn btn--plain">Adaptability</li>
+            <li class="skills__list-item btn btn--plain">Able to multitask</li>
+            <li class="skills__list-item btn btn--plain">Creativity</li>
+            <li class="skills__list-item btn btn--plain">Organization</li>
+            <!-- Add more soft skills here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact Me!</h2>
+        <a href="mailto:panequeval@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Template created By Raj Shekhar
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
