@@ -1,0 +1,16 @@
+{
+  "name": "valeriepaneque-portfolio.github.io",
+  "version": "1.0.0",
+  "description": "online portfolio",
+  "homepage": "https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC"
+}
