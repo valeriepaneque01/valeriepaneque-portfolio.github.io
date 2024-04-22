@@ -263,10 +263,11 @@
   
   .about-image img {
     border-radius: 50%; /* Circular frame for the image */
-    width: 308px; /* Adjust width as needed */
-    height: 295px; /* Adjust height as needed */
-  }
-  
+    width: 100%; /* Make the width 100% of its container */
+    height: auto; /* Let the height adjust proportionally based on the width */
+    max-width: 308px; /* Maximum width for larger screens */
+}
+
   
   .about__name {
     color: var(--clr-primary);
