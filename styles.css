@@ -349,6 +349,20 @@
     margin-left: 0.5em;
   }
   
+/* Modified CSS for projects section */
+.projects__subtitles {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.projects__subtitle {
+  font-size: 1.5rem; /* Adjust as needed */
+  color: var(--clr-fg-alt); /* Use the same color as other headings */
+  margin-bottom: 0.5em;
+}
+
+
+
   .skills__container {
     display: flex;
     justify-content: space-between; /* Ensures equal spacing between the two groups */
