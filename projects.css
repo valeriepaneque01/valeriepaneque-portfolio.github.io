@@ -254,6 +254,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3em;
   }
   
   .about {
@@ -476,4 +477,68 @@
     }
   }
 
-  
+  /* Case Study Container */
+.case-study-container {
+  margin-top: 7em; /* Add space above the case study */
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Case Study Section */
+.case-study-section {
+  margin-bottom: 3em; /* Space between case study sections */
+  padding-bottom: 2em; /* Padding for some breathing room */
+  border-bottom: 2px solid var(--clr-fg-alt); /* Adds a bottom border for separation */
+}
+
+.case-study-section h4 {
+  font-size: 1.3rem; /* Adjust heading font size */
+  color: var(--clr-fg-alt); /* Text color for section titles */
+  margin-bottom: 1em; /* Space below each section title */
+}
+
+.case-study-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--clr-fg); /* Text color */
+  max-width: 800px;
+  margin-bottom: 1.5em; /* Space between paragraphs */
+}
+
+/* Optional styling for better readability on smaller screens */
+@media (max-width: 900px) {
+  .case-study-section h4 {
+    font-size: 1.1rem; /* Adjust heading size for smaller screens */
+  }
+
+  .case-study-section p {
+    font-size: 0.95rem; /* Slightly smaller font for smaller screens */
+  }
+}
+
+.large-image-container {
+  width: 80%; /* Set the container to be a bit smaller than full width */
+  max-width: 800px; /* Limit the maximum width of the container */
+  height: 60vh; /* Make the container take 60% of the viewport height */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Prevent overflow of the image */
+  margin: 0 auto; /* Center the container itself */
+  margin-bottom: 2em; /* Add space below the container (between image and text) */
+}
+
+.large-image {
+  width: 100%; /* Make the image fill the container’s width */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%; /* Ensure it doesn’t grow larger than the container */
+  object-fit: contain; /* Ensure the image fits inside the container */
+  margin-top: 2em; /* Space above the image */
+  margin-bottom: 2em; /* Space below the image */
+}
+
+
+
+
+
