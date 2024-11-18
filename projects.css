@@ -518,27 +518,50 @@
 }
 
 .large-image-container {
-  width: 80%; /* Set the container to be a bit smaller than full width */
-  max-width: 800px; /* Limit the maximum width of the container */
-  height: 60vh; /* Make the container take 60% of the viewport height */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  overflow: hidden; /* Prevent overflow of the image */
-  margin: 0 auto; /* Center the container itself */
-  margin-bottom: 2em; /* Add space below the container (between image and text) */
+  width: 100%;  /* Make sure the container takes full width */
+  max-width: 800px; /* Maximum width for larger screens */
+  height: auto;  /* Let the height adjust automatically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
-.large-image {
-  width: 100%; /* Make the image fill the container’s width */
-  height: auto; /* Maintain the aspect ratio */
-  max-width: 100%; /* Ensure it doesn’t grow larger than the container */
-  object-fit: contain; /* Ensure the image fits inside the container */
-  margin-top: 2em; /* Space above the image */
-  margin-bottom: 2em; /* Space below the image */
+.fav-icon, .prototype {
+  width: 100%;  /* Ensure image takes up 100% of the container width */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the entire image fits inside the container */
+  max-width: 100%; /* Ensure the image doesn't exceed the container's max width */
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
+/* Media query for screens smaller than 768px (mobile/tablet) */
+@media (max-width: 768px) {
+  .large-image-container {
+    width: 95%;  /* Slightly larger container width for smaller screens */
+    height: auto; /* Adjust container height automatically */
+    margin-bottom: 1.5em; /* Reduced bottom margin */
+  }
 
+  .fav-icon, .prototype {
+    margin-top: 1em; /* Reduce top margin */
+    margin-bottom: 1em; /* Reduce bottom margin */
+  }
+}
 
+/* Media query for screens smaller than 480px (very small mobile screens) */
+@media (max-width: 480px) {
+  .large-image-container {
+    width: 100%; /* Full width for very small screens */
+    height: auto; /* Auto height */
+    margin-bottom: 1em; /* Reduce bottom margin */
+  }
 
-
+  .fav-icon, .prototype {
+    margin-top: 0.5em; /* Reduce top margin */
+    margin-bottom: 0.5em; /* Reduce bottom margin */
+  }
+}
