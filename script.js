@@ -27,7 +27,7 @@ const setTheme = (bodyClass, btnClass) => {
 }
 
 const toggleTheme = () =>
-	isDark() ? setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
+	isDark() ? setTheme('light', 'fa-solid fa-moon') : setTheme('dark', 'fa-solid fa-sun')
 
 
 btnTheme.addEventListener('click', toggleTheme)
@@ -35,13 +35,13 @@ btnTheme.addEventListener('click', toggleTheme)
 const displayList = () => {
 	const navUl = document.querySelector('.nav__list')
 
-	if (btnHamburger.classList.contains('fa-bars')) {
-		btnHamburger.classList.remove('fa-bars')
+	if (btnHamburger.classList.contains('fa-solid fa-bars')) {
+		btnHamburger.classList.remove('fa-solid fa-bars')
 		btnHamburger.classList.add('fa-times')
 		navUl.classList.add('display-nav-list')
 	} else {
 		btnHamburger.classList.remove('fa-times')
-		btnHamburger.classList.add('fa-bars')
+		btnHamburger.classList.add('fa-solid fa-bars')
 		navUl.classList.remove('display-nav-list')
 	}
 }
