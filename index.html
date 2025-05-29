@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <meta name="description" content="Portfolio" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Valerie Paneque - UI/UX Designer specializing in user-centric digital experiences. Recent Digital Media graduate with expertise in Figma, front-end development, and responsive design.">
+    <meta name="keywords" content="UI UX Designer, Digital Media, Web Design, Figma, Front-end Development, User Experience, Valerie Paneque">
+    <meta name="author" content="Valerie Paneque">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io/">
+    <meta property="og:title" content="Valerie Paneque - UI/UX Designer Portfolio">
+    <meta property="og:description" content="UI/UX Designer specializing in user-centric digital experiences. View my projects including Bump Bites, Thrift It, and more creative design solutions.">
+    <meta property="og:image" content="https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io/images/portfolio-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io/">
+    <meta property="twitter:title" content="Valerie Paneque - UI/UX Designer Portfolio">
+    <meta property="twitter:description" content="UI/UX Designer specializing in user-centric digital experiences. View my projects and creative design solutions.">
+    <meta property="twitter:image" content="https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io/images/portfolio-preview.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/pane-logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/pane-logo.png">
+    
+    <!-- Your existing head content continues... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
@@ -15,132 +41,109 @@
     <link rel="icon" href="images/pane-logo.png" type="image/x-icon">
     <title>Valerie Paneque</title>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <!-- CHANGE THIS LINK -->
-        <a href="https://valeriepaneque01.github.io/valeriepaneque-portfolio.github.io" class="link"
-          >VP.</a
-        >
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fa-solid fa-moon"></i>
-        </button>
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-
-    <main>
-     <!-- About -->
-     <div class="about-container">
-      <div class="about">
-        <h1>Hi, I am <br> <span class="about__name">Valerie Paneque.</span></h1>
-        <h2 class="about__role">UI/UX Designer.</h2>
-        <p class="about__desc">
-          I am a Digital Media enthusiast with a profound interest in crafting visually captivating and interactive experiences. My journey at the University of Central Florida has honed my skills, nurturing a keen eye for detail and a deep understanding of effective digital media strategies. My passion lies in UI design, where I strive to create user-centric interfaces that seamlessly blend functionality with aesthetics. I thrive on projects that push the boundaries of creativity, constantly seeking new challenges to expand my expertise. Check out my resume and take a look at my projects!
-        </p>
-        <div class="about__contact center">
-          <a href="doc/Val-Resume-2024-copy.pdf" target="_blank">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-          <a href="doc/CV-val.pdf" target="_blank">
-            <span class="btn btn--outline">CV</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/valerie-paneque-a2a44a1ba/"
-            aria-label="linkedin"
-            class="link link--icon"
-            target="_blank"
-          >
-            <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-      <div class="about-image">
-        <img src="images/headshot.jpeg" alt="headshot">
+  <body id="top">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">VP.</div>
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Loading Portfolio...</div>
       </div>
     </div>
+    <div class="scroll-progress"></div> 
+  <!-- Replace your existing header with this enhanced version -->
+<header class="header center">
+  <h3>
+    <a href="#top" class="link">VP.</a>
+  </h3>
+
+  <nav class="nav center">
+    <ul class="nav__list center">
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#projects">Projects</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#skills">Skills</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      aria-label="toggle navigation"
+      class="btn btn--icon nav__hamburger"
+    >
+      <i aria-hidden="true" class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<!-- The section indicators will be added automatically by JavaScript -->
+
+    <main>
+      <!-- Hero Section -->
+  <div class="about-container">
+    <!-- Animated background -->
+    <div class="hero-background">
+      <div class="hero-decoration"></div>
+      <div class="hero-decoration"></div>
+      <div class="hero-decoration"></div>
+    </div>
+    
+    <div class="about">
+      <h1>Hi, I am <br> <span class="about__name">Valerie Paneque.</span></h1>
+      <h2 class="about__role">Digital Designer.</h2>
+      <p class="about__desc">
+        I am a Digital Media enthusiast with a profound passion for crafting visually captivating and interactive experiences. My journey at the University of Central Florida has sharpened my skills, nurturing a keen eye for detail and a deep understanding of effective digital media strategies. I thrive on creating user-centric interfaces that seamlessly blend functionality with stunning aesthetics.
+      </p>
+      <div class="about__contact center">
+        <a href="doc/Val-Resume-2024-copy.pdf" target="_blank">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+        <a href="doc/CV-val.pdf" target="_blank">
+          <span class="btn btn--outline">CV</span>
+        </a>
+        <a href="https://www.linkedin.com/in/valerie-paneque-a2a44a1ba/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="about-image">
+      <img src="images/headshot.jpeg" alt="Valerie Paneque - UI/UX Designer">
+    </div>
+  </div>
 
       <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
- <!-- 
-        <div class="projects__subtitles">
-          <h3 class="projects__subtitle">React Projects</h3>
-        </div>
-        <div class="projects__grid">
-
-          <div class="project">
-            <h3>Login and Registration for TODO App</h3>
-            <img src="images/lab8-login-todo.gif" alt="Login and Registration for TODO App">
-            <p class="project__description">
-             The goal of this assignment was to create a React application that features two screens a previous TODO app that I created in React, a login screen and registration screen.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">React Native</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <h3>React Native Exercise App</h3>
-            <img src="images/lab9-react-exercise_1.gif" alt="Exercise App">
-            <p class="project__description">
-             This assigment utilizes a React exercise tracker that I previously created that displays for a list of exercises. The goal of this assignment was to modify this app to contain two different screens for each exercise. The exercises that contain the stopwatch timer will display "Duration Exercise" and "Repetition Exercise" for the exercise that contain the rep increase.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">React Native</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <h3>React Native Quiz App</h3>
-            <img src="images/lab10-Quiz_1.gif" alt="Quiz App">
-            <p class="project__description">
-             The goal of this assignment was to create a simple React Native quiz app that accepts a list of questions and answers and renders them to the screen. This app supports React Native Navigation, and contains a Question component and a Summary component. This app also needed to support three types of answers: True/False, Multiple Choice, and Multiple Answer. The Summary screen displays the users total score and displays all questions and whether the user chose the correct or incorrect answer.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">React Native</li>
-            </ul>
-          </div>
-          </div>
-        </section> -->
-
- <!-- Second section UI projects -->
-<section id="project2" class="section projects">
+ <!-- Replace your existing projects section with this -->
+<section id="projects" class="section projects">
+  <h2 class="section__title fade-in">Projects</h2>
+  
   <div class="projects__subtitles">
-    <h3 class="projects__subtitle">UI/UX Design Projects</h3>
+    <h3 class="projects__subtitle fade-in-left">UI/UX Design Projects</h3>
   </div>
+  
   <div class="projects__grid">
-
     <!-- Project 1: Bump Bites -->
     <div class="project">
       <a href="projects/bump-bites.html" class="project-link">
-        <img src="images/bumpbites-site.png" alt="Bump Bites App" class="project-image">
-        <div class="project-info">
-          <h3>Bump Bites</h3>
+        <div class="project-image-container">
+          <img src="images/bumpbites-site.png" alt="Bump Bites App" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Bump Bites</h3>
+          <p class="project-description">
+            A comprehensive pregnancy snack craving subscription box service website developed over 2 semesters. Features full-stack development with responsive design and user-friendly interface.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
         </div>
       </a>
     </div>
@@ -148,9 +151,20 @@
     <!-- Project 2: Thrift It -->
     <div class="project">
       <a href="projects/thrift-it.html" class="project-link">
-        <img src="images/thriftit.png" alt="Thrift It Website" class="project-image">
-        <div class="project-info">
-          <h3>Thrift It</h3>
+        <div class="project-image-container">
+          <img src="images/thriftit.png" alt="Thrift It Website" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Thrift It</h3>
+          <p class="project-description">
+            A community-driven website for sharing unique thrift finds. Features a warm, retro design with nostalgic color palette to create an inviting user experience.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">UI Design</span>
+          </div>
         </div>
       </a>
     </div>
@@ -158,9 +172,20 @@
     <!-- Project 3: Study Smarter -->
     <div class="project">
       <a href="projects/study-smarter.html" class="project-link">
-        <img src="images/flashcard-app.png" alt="Flashcard App" class="project-image">
-        <div class="project-info">
-          <h3>Study Smarter</h3>
+        <div class="project-image-container">
+          <img src="images/flashcard-app.png" alt="Flashcard App" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Study Smarter</h3>
+          <p class="project-description">
+            A mobile flashcard application allowing users to create, edit, and study flashcards. Includes search functionality and the ability to save and favorite public decks.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Mobile Design</span>
+            <span class="tech-tag">UX Research</span>
+          </div>
         </div>
       </a>
     </div>
@@ -168,9 +193,20 @@
     <!-- Project 4: Task Track -->
     <div class="project">
       <a href="projects/task-track.html" class="project-link">
-        <img src="images/todo-app.png" alt="TODO App" class="project-image">
-        <div class="project-info">
-          <h3>Task Track</h3>
+        <div class="project-image-container">
+          <img src="images/todo-app.png" alt="TODO App" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Task Track</h3>
+          <p class="project-description">
+            A comprehensive task management app with deadline tracking and completion features. Includes user profiles, calendar integration, and intuitive task organization.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">App Design</span>
+            <span class="tech-tag">User Flow</span>
+          </div>
         </div>
       </a>
     </div>
@@ -178,9 +214,20 @@
     <!-- Project 5: PostUrPet -->
     <div class="project">
       <a href="projects/posturpet.html" class="project-link">
-        <img src="images/posturpet-app.png" alt="Social Media App for Pets" class="project-image">
-        <div class="project-info">
-          <h3>PostUrPet</h3>
+        <div class="project-image-container">
+          <img src="images/posturpet-app.png" alt="Social Media App for Pets" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">PostUrPet</h3>
+          <p class="project-description">
+            A social media platform designed specifically for pet owners. Features user research, task analysis, and comprehensive prototyping from paper to high-fidelity designs.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">User Research</span>
+            <span class="tech-tag">Prototyping</span>
+          </div>
         </div>
       </a>
     </div>
@@ -188,207 +235,210 @@
     <!-- Project 6: Zara Homepage Redesign -->
     <div class="project">
       <a href="projects/zara-homepage.html" class="project-link">
-        <img src="images/zara-redesign.png" alt="ZARA homepage redesign" class="project-image">
-        <div class="project-info">
-          <h3>Zara Homepage Redesign</h3>
+        <div class="project-image-container">
+          <img src="images/zara-redesign.png" alt="ZARA homepage redesign" class="project-image">
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Zara Homepage Redesign</h3>
+          <p class="project-description">
+            Accessibility-focused redesign of Zara's website to improve readability and user experience for visually impaired users while maintaining modern aesthetics.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Accessibility</span>
+            <span class="tech-tag">Web Design</span>
+          </div>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Replace your existing skills section with this -->
+<section class="section skills fade-in" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <div class="skills__container">
+    
+    <!-- Technical Skills with Progress Bars -->
+    <div class="skills__group technical-skills">
+      <h3 class="skills__group-title">Technical Skills</h3>
+      <div class="skills__list">
+        
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>HTML & CSS</span>
+            <span class="skill-level">90%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>JavaScript</span>
+            <span class="skill-level">60%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+
+     <!--  <div class="skill-item">
+          <div class="skill-name">
+            <span>PHP</span>
+            <span class="skill-level">70%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 70%;"></div>
+          </div>
+        </div> 
+      --> 
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Figma</span>
+            <span class="skill-level">95%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>UI/UX Design</span>
+            <span class="skill-level">90%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Visual Studio Code</span>
+            <span class="skill-level">85%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>GitHub</span>
+            <span class="skill-level">75%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>WordPress</span>
+            <span class="skill-level">50%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Soft Skills with Animated Tags -->
+    <div class="skills__group soft-skills">
+      <h3 class="skills__group-title">Soft Skills</h3>
+      <div class="skills__list">
+        <span class="skill-tag">Multitasking</span>
+        <span class="skill-tag">Quick Learner</span>
+        <span class="skill-tag">Time Management</span>
+        <span class="skill-tag">Team Collaboration</span>
+        <span class="skill-tag">Creativity</span>
+        <span class="skill-tag">Strong Communication</span>
+        <span class="skill-tag">Adaptability</span>
+        <span class="skill-tag">Critical Thinking</span>
+        <span class="skill-tag">Problem-Solving</span>
+        <span class="skill-tag">Detail Oriented</span>
+        <span class="skill-tag">Organized & Efficient</span>
+      </div>
     </div>
 
   </div>
 </section>
 
-         <!--  <div class="project">
-            <h3>Bump Bites</h3>
-            <img src="images/bumpbites-site.png" alt="Bump Bites App">
-            <p class="project__description">
-              This group project was worked on over the course of 2 semesters (Fall and Spring). My team of 5 worked together to create a website for a Pregnancy Snack Craving Subscription box service. We created a Statement of Work, Strategy Guide, Visual Design Guide, Style Sheet, Wireframes, Use Cases, Testing Plan, Content Inventory, LoFi and HiFi prototypes, and testing mitigation. In Spring 2024, my group worked hard to develop and deploy the website consisting of front-end and back-end development. We used languages like HTML, CSS, JavaScript, and PHP to create this. My role in this group was creating the style sheet, creating the HiFi functional prototype using Figma, and helping with front-end and back-end development. Please view our HI-FI prototype and deployed site below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-              <li class="project__stack-item">HTML</li>
-              <li class="project__stack-item">CSS</li>
-              <li class="project__stack-item">JavaScript</li>
-               <li class="project__stack-item">PHP</li>
-            </ul>
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/Y1TdXIlHbILua7rMGaYuwO/Bump-Bites--HIFI?type=design&node-id=204-3154&t=eaT3xOBPLtnaqYsP-1&scaling=scale-down&page-id=204%3A750&starting-point-node-id=204%3A3154&mode=design" target="_blank">
-                <span class="btn btn--outline">figma prototype</span>
-              </a>
-            </li>
-            </ul>
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://students.gaim.ucf.edu/~jo090771/index.html" target="_blank">
-                <span class="btn btn--outline">deployed site</span>
-              </a>
-            </li>
-            </ul>
+<!-- Replace your existing contact section with this -->
+<section class="section contact" id="contact">
+  <div class="contact-container">
+    <!-- Header -->
+    <div class="contact-header">
+      <h2 class="contact-title">Let's Work Together!</h2>
+      <p class="contact-subtitle">
+        Ready to bring your next project to life? I'd love to hear about your ideas and discuss how we can create something amazing together.
+      </p>
+    </div>
 
-          </div>
--->
-         <!--  <div class="project">
-            <h3>Thrift It</h3>
-            <img src="images/thriftit.png" alt="Thrift It Website">
-            <p class="project__description">
-              The goal of this assignment was to create a website design for wordpress using a design platform, in this case, I used Figma to create this. This assignment gave me a lot of creative freedom when it came to the design and idea for this website. I created a website called "Thrift It". "Thrift It” is a community where users can share their unique thrift finds, whether it is clothing, trinkets, furniture, and more that were discovered at thrift stores. I wanted to create an appealing and aesthetic design that creates nostalgia and warmth, which is why I gave this website a retro design featuring a palette of reds, oranges, and browns. Please view my report and Figma prototype below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-            </ul>
-
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/VuIHX80ZfRw1lJlEO5Kav7/rapidapp-proposal?node-id=42-570&t=poVbLEf5TFOogC8f-1&scaling=scale-down&page-id=42%3A569&starting-point-node-id=42%3A570" target="_blank">
-                <span class="btn btn--outline">Figma Prototype</span>
-              </a>
-            </li>
-            </ul>
-
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="doc/portfolio-report.pdf" target="_blank">
-                <span class="btn btn--outline">Website Report</span>
-              </a>
-            </li>
-            </ul>
-
-          </div>
--->
-        <!--   <div class="project">
-            <h3>Study Smarter</h3>
-            <img src="images/flashcard-app.png" alt="Flashcard App">
-            <p class="project__description">
-             The goal of this assignment was to design a mid-fidelity mobile application that allows users to study flashcards. This application would allow users to create, delete and edit flashcards and view them in a random order. Each flashcard has a prompt on one side and answer on the other. My prototype also includes a search feature that will allow the user to look for existing,public flashcards decks. They also have the option to save and favorite cards that they enjoy. Please view my Figma prototype below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-            </ul>
-
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/QYmv8SB4KoMO5yCU5mLChX/FlashCardApp?type=design&node-id=1-2&t=UvqZSuDnjrcxyR4h-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank">
-                <span class="btn btn--outline">Figma Prototype</span>
-              </a>
-            </li>
-          </ul>
-          </div>
-
-          <div class="project">
-            <h3>Task Track</h3>
-            <img src="images/todo-app.png" alt="TODO App">
-            <p class="project__description">
-              The goal of this assignment was to design a mid-fidelity TODO app that will allow users to create and manage tasks, set deadlines, and mark tasks as completed. My prototype consists of a signup/login page, profile, and a main page that allows the user to navigate to their tasks, upcoming tasks, completed tasks, and view their calendar.  The task page will allow users to add new tasks to their list, check off completed tasks, edit their task name and description, and delete tasks. Please view my Figma prototype below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-            </ul>
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/VPL1v9c0XJrkXrvDrTW3Fo/Ex6-TODO?type=design&node-id=144-682&t=M3o5t531WGeBsPid-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank">
-                <span class="btn btn--outline">Figma Prototype</span>
-              </a>
-            </li>
-          </ul>
-          </div>
-
-          <div class="project">
-            <h3>PostUrPet</h3>
-            <img src="images/posturpet-app.png" alt="Social Media App for Pets">
-            <p class="project__description">
-              The goal of this project was to create an application (not fully functional) and collaborate with my group of 2 on its creation. The goal of this project was to to brainstorm and define users/stakeholders for app, construct use cases and perform think aloud protocol, task analysis, interaction analysis, define information architecture, navigation structure, and search, sort, retrieval results. We were also tasked to create paper prototype, Lofi and HiFi prototype to get user feedback. Please view my Figma prototype below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-            </ul>
-
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/30TicTf9iKpOEnvXWbu5BY/hifi-posturpet-prototype-(Copy)?node-id=214-297&starting-point-node-id=214%3A297&scaling=scale-down&mode=design&t=lXl9Mqcm4TVyKqHx-1" target="_blank">
-                <span class="btn btn--outline">Figma Prototype</span>
-              </a>
-            </li>
-          </ul>
-          </div>
-
-          <div class="project">
-            <h3>ZARA Homepage Redesign</h3>
-            <img src="images/zara-redesign.png" alt="ZARA homepage redesign">
-            <p class="project__description">
-              The goal of this redesign was to find a website that has poor design choices in terms of accessibility. My goal was to make the ZARA website more accessible to those with visual impairments. The original website is very hard to read with the use of small text and clashing colors. Please view my Figma prototype below.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Figma</li>
-            </ul>
-
-            <ul class="project__stack">
-              <li class="project__stack-item">  <a href="https://www.figma.com/proto/r84Afcm7bRJZPuY4Frs6CZ/zara-website?type=design&node-id=1-2&t=X4PDfdYSg9MRhSgj-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank">
-                <span class="btn btn--outline">Figma Prototype</span>
-              </a>
-            </li>
-          </ul>
-          </div>
+    <!-- Contact Methods -->
+    <div class="contact-methods">
+      <div class="contact-method">
+        <div class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
         </div>
-      </section>
--->
-
-<!-- 
-        <section id="project3" class="section projects">
-        <div class="projects__subtitles">
-          <h3 class="projects__subtitle">Personal Design Projects</h3>
-        </div>
-        <div class="projects__grid">
-
-          <div class="project">
-            <h3>UCF Bookstore Homecoming Window Painting Contest</h3>
-            <img src="images/window.png" alt="Homecoming Window Painting">
-            <p class="project__description">
-             I work at the Foxtail Coffee, located in the UCF Campus Bookstore. I volunteered to create a window design to submit for the Homecoming Window Painting Contest/Fundraiser held by the Campus store. There were two themes for the contest: 1. UCF Homecoming - "Mystery Edition" and 2. UCF Football - "Charge On". I wanted to create a design that incorporated both themes, as well as, including the Foxtail mascot, which is a fox. I ended up coming up with a design that shows the Foxtail Fox and the UCF mascot "Knightro" driving the "Mystery Machine" from Scooby Doo. Although my painting did not win, I had a great time creating and painting my design.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Adobe Fresco</li>
-            </ul>
-          </div>
-        </div>
-        </section>
--->
-
-     <!-- Skills -->
-     <section class="section skills" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <div class="skills__container">
-        <div class="skills__group">
-          <h3 class="skills__group-title">Technical Skills</h3>
-          <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">HTML</li>
-            <li class="skills__list-item btn btn--plain">CSS</li>
-            <li class="skills__list-item btn btn--plain">JavaScript</li>
-            <li class="skills__list-item btn btn--plain">PHP</li>
-            <li class="skills__list-item btn btn--plain">Visual Studio Code</li>
-            <li class="skills__list-item btn btn--plain">Figma</li>
-            <li class="skills__list-item btn btn--plain">Canva</li>
-            <li class="skills__list-item btn btn--plain">Front-End Design</li>
-            <li class="skills__list-item btn btn--plain">User Experience Design</li>
-            <!-- Add more technical skills here -->
-          </ul>
-        </div>
-        <div class="skills__group">
-          <h3 class="skills__group-title">Soft Skills</h3>
-          <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">Communication</li>
-            <li class="skills__list-item btn btn--plain">Teamwork</li>
-            <li class="skills__list-item btn btn--plain">Time Management</li>
-            <li class="skills__list-item btn btn--plain">Adaptability</li>
-            <li class="skills__list-item btn btn--plain">Able to multitask</li>
-            <li class="skills__list-item btn btn--plain">Creativity</li>
-            <li class="skills__list-item btn btn--plain">Organization</li>
-            <!-- Add more soft skills here -->
-          </ul>
-        </div>
-      </div>
-    </section>
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact Me!</h2>
-        <a href="mailto:panequeval@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+        <h3>Email Me</h3>
+        <p>Send me a message and I'll get back to you within 24 hours.</p>
+        <a href="mailto:panequeval@gmail.com" class="contact-link">
+          panequeval@gmail.com
         </a>
-      </section>
-    </section>
+      </div>
+
+      <div class="contact-method">
+        <div class="contact-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <h3>Connect on LinkedIn</h3>
+        <p>Let's connect professionally and discuss opportunities.</p>
+        <a href="https://www.linkedin.com/in/valerie-paneque-a2a44a1ba/" target="_blank" class="contact-link">
+          View Profile
+        </a>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-section">
+      <h3 class="social-title">Find Me Online</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/valerie-paneque-a2a44a1ba/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:panequeval@gmail.com" class="social-link" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <!-- Add more social links as needed -->
+        <a href="#" class="social-link disabled" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+      <p class="cta-text">Want to learn more about my work?</p>
+      <div class="cta-buttons">
+        <a href="doc/Val-Resume-2024-copy.pdf" target="_blank" class="cta-button cta-button--primary">
+          Download Resume
+        </a>
+        <a href="doc/CV-val.pdf" target="_blank" class="cta-button cta-button--secondary">
+          View CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
